@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <section>
+        <form onsubmit="SavetoCrud(event)">
+            <label>Choose Amount</label>
+            <input id="amount" type="text" name="amount" required><br><br>
+            <label>Discription------</label>
+            <input id="description" type="text" name="description" required><br><br>
+            <label>Choose a Category</label>
+            <select id="category" required>
+                <option>Party</option>
+                <option>Travelling</option>
+                <option>Movies</option>
+                <option>cantsay</option>
+            </select><br><br>
+            <button>Submit</button>
+        </form>
+        <ul id="listOfUsers"></ul>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+
+    <script src="crud.js"></script>
+</body>
+</html>
